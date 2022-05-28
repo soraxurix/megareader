@@ -1,3 +1,17 @@
+<?php 
+	session_start();
+	$usuario = $_SESSION['id_user'];
+	$nombre = $_SESSION['name_user'];
+	echo "<h1>".$nombre."</h1>";
+
+	if(!isset($usuario)){
+		header("location: https://megareader.azurewebsites.net/");
+		echo "No se cargaron los datos del usuario<br>";
+	}else{
+		echo "Se cargaron los datos del usuario<br>";
+	}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,20 +52,7 @@
 	</style>	
 </head>
 <body>
-	<?php 
-		session_start();
-		$usuario = $_SESSION['id_user'];
-		$nombre = $_SESSION['name_user'];
-		echo "<h1>".$nombre."</h1>";
-
-		if(!isset($usuario)){
-			header("location: https://megareader.azurewebsites.net/");
-		}else{
-			echo "Se cargaron los datos del usuario<br>";
-		}
-
-
-	?>
+	
 
 	<div class="nav_container">
 		<nav class="navbar">

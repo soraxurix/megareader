@@ -27,7 +27,8 @@ if (isset($_POST['email']) || isset($_POST['pass'])){
  			$_SESSION['id_user'] = $array['id_usuario'];
  			$_SESSION['name_user'] = $array['username'];
  			$_SESSION['email_user'] = $array['email'];
- 			echo json_encode(200);
+ 			echo $_SESSION['name_user'];
+ 			// echo json_encode(200);
  		}else{
  			echo json_encode(203);	
  		}
