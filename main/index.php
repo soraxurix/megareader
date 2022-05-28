@@ -4,12 +4,12 @@
 	$nombre = $_SESSION['name_user'];
 	echo "<h1>Nombre: ".$nombre."</h1>";
 
-	/*if(!isset($usuario)){
-		// header("location: https://megareader.azurewebsites.net/");
+	if(!isset($usuario)){
+		header("location: https://megareader.azurewebsites.net/");
 		echo "No se cargaron los datos del usuario<br>";
 	}else{
 		echo "Se cargaron los datos del usuario<br>";
-	}*/
+	}
 ?>
 
 <!DOCTYPE html>

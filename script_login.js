@@ -24,8 +24,8 @@ button_login.addEventListener('click', async function (e) {
 			notificacion.classList.add('is-success');
 			notificacion.classList.remove('is-hidden');
 
-			// window.location.replace("main/");
-			window.location.replace("prueba_sesion.php");
+			window.location.replace("main/");
+			// window.location.replace("prueba_sesion.php");
 			break;
 		case 201:
 			notificacion.innerHTML ='No se pasaron los valores del formulario'; 
