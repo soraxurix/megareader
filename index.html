@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
-	<link rel="stylesheet" href="">
+	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+	<link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/soraxurix/GDLREADER/main/GDLREADER/app/src/main/res/drawable/logo.png">	
+	
+	<!-- BULMA FRAMEWORK -->
+	<link rel="stylesheet" href="librerias/bulma/css/bulma.min.css">
+	<!-- FRAMEWORK ANIMACIONES -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />		
+	<!-- FONT AWESOME -->
+	<script src="https://kit.fontawesome.com/cb918a26fb.js" crossorigin="anonymous"></script>
+	
+
+	<link rel="stylesheet" href="style.css">
+	
 </head>
 <body>
-	<h1>HOLAAAA</h1>
+	<!-- Cuadro del login -->
+	<div class="container form">
+		<img src="https://raw.githubusercontent.com/soraxurix/GDLREADER/main/GDLREADER/app/src/main/res/drawable/logo.png" class="avatar">
+		<!-- Titulo -->
+		<p class="title is-4 has-text-info-dark has-text-center has-text-centered">Inicie sesión con su cuenta</p>
+		
+		<div class="notification is-danger has-text-centered is-hidden" id="notificacion"></div>
+
+		<form id='form_login'>
+			<!-- Input para el correo electronico -->
+			<div class="field">
+			  <p class="control has-icons-left">
+			    <input class="input is-rounded is-info has-text-info" type="email" placeholder="Correo electrónico" name="email">
+			    <span class="icon is-small is-left">
+			      <i class="fas fa-envelope has-text-info" ></i>
+			    </span>
+			  </p>
+			</div>
+			<!-- Input para el correo electronico -->
+			<div class="field">
+			  <p class="control has-icons-left">
+			    <input class="input is-rounded is-info has-text-info" type="password" placeholder="Contraseña" name="pass">
+			    <span class="icon is-small is-left">
+			      <i class="fas fa-lock  has-text-info"></i>
+			    </span>
+			  </p>
+			</div>
+		</form>
+
+		<hr >
+
+		<div class="buttons">
+			<button class="button is-success is-outlined is-rounded is-fullwidth" id="button-login">
+				<span class="icon is-small" id="icono-button"><i class="fas fa-user"></i></span> 
+				<span>Iniciar sesion</span>
+			</button>
+			<a class="button is-link is-outlined is-rounded is-fullwidth" id="button-signin" href="signin/">
+				<span class="icon is-small"><i class="fas fa-user-edit"></i></span>
+				<span>Crear cuenta</span>
+			</a>
+		</div>
+		
+	</div>
+	
+	<script src="script_login.js"></script>
 </body>
 </html>

@@ -1,0 +1,38 @@
+
+
+.form {
+  margin-top: 135px;
+  width: 430px;
+  background: #fff;
+  position: relative;
+  padding: 20px;
+  box-shadow: 2px 2px 17px -4px rgba(0,0,0,0.58);
+  border-radius: 20px;
+  border: 8px;
+  border-style: solid;
+  border-color: #48A6F4
+}
+
+.form .avatar {
+  /*box-shadow: -1px 9px 12px -5px #000000;*/
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+
+  position: absolute;
+  top: -90px;
+  left: calc(50% - 50px);
+  
+  background: #fff;
+
+}
+.form p{
+	margin-top: 25px;
+}
+
+
+@media screen and (max-width: 430px) {
+  .form {
+    width: 90%;
+  }
+}
