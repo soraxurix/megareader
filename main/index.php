@@ -18,9 +18,20 @@
 			border-bottom: solid 0.5px;
 			padding: 10px 100px;
 		}
+
+		.main-content{
+			min-height: 600px; 
+			background-color: #E5E5E5;
+			border-radius: 8px; 
+			margin-top: 30px;
+			padding: 30px;
+		}
 		@media screen and (max-width: 1026px) {
   			.nav_container {
 		    	padding: 10px 0;
+		  	}
+		  	.main-content{
+		  		width: 95%;
 		  	}
 		}
 
@@ -110,6 +121,8 @@
 
 
 	<!-- Main contnet -->
-	
+	<div class="container main-content">
+		<h1>Hola!</h1>
+	</div>
 </body>
 </html>
