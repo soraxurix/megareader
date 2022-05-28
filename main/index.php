@@ -80,7 +80,7 @@
 
 	<!-- Main contnet -->
 	<div class="container main-content">
-		<h1 class="is-size-4">Bienvenido <span class="has-text-primary has-text-weight-bold"><?php echo $nombre;?></span> !</h1>
+		<p class="is-size-4 has-text-centered">Bienvenido <span class="has-text-primary has-text-weight-bold"><?php echo $nombre;?></span> !</p>
 	</div>
 </body>
 </html>

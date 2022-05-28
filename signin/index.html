@@ -25,9 +25,9 @@
 		<!-- Titulo -->
 		<p class="title is-4 has-text-info-dark has-text-center has-text-centered">Únete a nosotros</p>
 		
-		<div class="notification is-danger has-text-centered is-hidden" id="notificacion"></div>
+		
+		<form id='form_sigin'>
 
-		<form id='form_login'>
 			<!-- Input para el correo electronico -->
 			<div class="field">
 			  <p class="control has-icons-left">
@@ -96,12 +96,14 @@
 			</div>
 			<br>
 			<label class="checkbox">
-				<input type="checkbox"> Acepto el <span class="has-text-info">aviso de privacidad</span>
+				<input type="checkbox" id="check_aviso"> Acepto el <span class="has-text-info">aviso de privacidad</span>
 			</label>
+
+			
 		</form>
 
 		<hr >
-
+		<div class="notification is-danger has-text-centered is-hidden" id="notificacion"></div>
 		<div class="buttons">
 			<button class="button is-success is-outlined is-rounded is-fullwidth" id="button-signin">
 				<span class="icon is-small" id="icono-button"><i class="fas fa-pen"></i></span> 
@@ -109,8 +111,9 @@
 			</button>
 			
 		</div>
+
 	</div>
 	
-	<script src="script_login.js"></script>
+	<script src="script_signin.js"></script>
 </body>
 </html>
