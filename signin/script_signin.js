@@ -25,6 +25,21 @@ button_signin.addEventListener("click", async function (e) {
 		body: formData
 	});
 
+	const data = await res.json();
+	
+	if (data === 200) {
+		notificacion.innerHTML = "Se ha creado la cuenta.";
+		notificacion.classList.add('is-success');
+		notificacion.classList.remove('is-danger');
+		notificacion.classList.remove('is-hidden');
+		window.location.replace("../main/");
+	} else {
+		notificacion.innerHTML = "Hubo un error al realizar la consulta.";
+		notificacion.classList.remove('is-success');
+		notificacion.classList.add('is-danger');
+		notificacion.classList.remove('is-hidden');
+	}
+
 	// Agregando icono normal
 	icono_button.innerHTML = '<i class="fas fa-pen"></i>';
 });
