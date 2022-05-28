@@ -2,14 +2,14 @@
 	session_start();
 	$usuario = $_SESSION['id_user'];
 	$nombre = $_SESSION['name_user'];
-	echo "<h1>".$nombre."</h1>";
+	echo "<h1>Nombre: ".$nombre."</h1>";
 
-	if(!isset($usuario)){
-		header("location: https://megareader.azurewebsites.net/");
+	/*if(!isset($usuario)){
+		// header("location: https://megareader.azurewebsites.net/");
 		echo "No se cargaron los datos del usuario<br>";
 	}else{
 		echo "Se cargaron los datos del usuario<br>";
-	}
+	}*/
 ?>
 
 <!DOCTYPE html>
@@ -35,10 +35,10 @@
 
 		.main-content{
 			min-height: 600px; 
-			background-color: #F1F0F0;
 			border-radius: 8px; 
 			margin-top: 30px;
 			padding: 30px;
+			border: solid 5px red;
 		}
 		@media screen and (max-width: 1026px) {
   			.nav_container {
