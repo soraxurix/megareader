@@ -6,7 +6,7 @@ echo '
 <div class="nav_container">
 		<nav class="navbar">
 		  <div class="navbar-brand">
-		    <a class="navbar-item" href="#">
+		    <a class="navbar-item" href="https://megareader.azurewebsites.net/main/">
 		      
 			  <img src="https://raw.githubusercontent.com/soraxurix/megareader_cloud/main/public/logo%20horizontal.png" width="112" height="28">
 		      

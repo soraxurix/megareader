@@ -31,11 +31,12 @@
 		}
 
 		.main-content{
-			min-height: 600px; 
+			min-height: 300px; 
 			border-radius: 8px; 
 			margin-top: 30px;
 			padding: 30px;
 			border: solid 5px #48A6F4;
+			box-shadow: 2px 2px 17px -4px rgba(0,0,0,0.58);
 		}
 		@media screen and (max-width: 1026px) {
   			.nav_container {
@@ -51,54 +52,6 @@
 <body>
 	<?php include 'header/index.php';?>
 
-	<!-- <div class="nav_container">
-		<nav class="navbar">
-		  <div class="navbar-brand">
-		    <a class="navbar-item" href="#">
-		      
-			  <img src="https://raw.githubusercontent.com/soraxurix/megareader_cloud/main/public/logo%20horizontal.png" width="112" height="28">
-		      
-		    </a>
-		    <div class="navbar-burger" data-target="navBar">
-		      <span></span>
-		      <span></span>
-		      <span></span>
-		    </div>
-		  </div>
-
-		  <div id="navBar" class="navbar-menu">
-		    		    	  
-		    <div class="navbar-end">
-				<div class="navbar-item has-dropdown is-hoverable">
-					<a class="navbar-link is-size-5 has-text-info" href="#"> <?php echo $_SESSION['name_user']?> </a>
-					<div class="navbar-dropdown is-boxed">
-						<a class="navbar-item is-size-5 icon-text">
-							<span class="icon has-text-success"><i class="fas fa-book"></i></span> 
-							<span class="has-text-black">Libros</span>
-						</a>
-						<a class="navbar-item is-size-5 icon-text" href="#"> 
-							<span class="icon has-text-primary"><i class="fas fa-user"></i></span>
-							<span class="has-text-black">Perfil</span>
-						</a>
-						<a class="navbar-item is-size-5 icon-text" href="#"> 
-							<span class="icon has-text-info"><i class="fas fa-book-reader"></i></span>
-							<span class="has-text-black">Mis libros</span>
-						</a>
-						<hr class="navbar-divider">
-						<a class="navbar-item is-size-5 icon-text" href="#"> 
-							<span class="icon has-text-warning"><i class="fas fa-question-circle"></i></span>
-							<span class="has-text-black">Sobre nosotros</span>
-						</a>
-						<a class="navbar-item is-size-5 icon-text" href="sesion/cerrar_sesion.php"> 
-							<span class="icon has-text-danger"><i class="fas fa-sign-out-alt"></i></span>
-							<span class="has-text-black">Cerrar Sesion</span>
-						</a>
-					</div>
-				</div>			
-		    </div>
-		  </div>
-		</nav>
-	</div> -->	
 
 	<script>
 		document.addEventListener('DOMContentLoaded', () => {
@@ -127,7 +80,7 @@
 
 	<!-- Main contnet -->
 	<div class="container main-content">
-		<h1>Hola!</h1>
+		<h1 class="is-size-4">Bienvenido <span class="has-text-primary has-text-weight-bold"><?php echo $nombre;?></span> !</h1>
 	</div>
 </body>
 </html>
