@@ -106,14 +106,10 @@
 		  });
 
 		});
-	</script>	
+	</script>
 
-	<style>
-		@media screen and (max-width: 1025) {
-		  .navbar {
-		    padding: 0;
-		  }
-		}		
-	</style>	
+
+	<!-- Main contnet -->
+	
 </body>
 </html>
