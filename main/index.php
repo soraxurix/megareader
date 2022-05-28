@@ -5,7 +5,6 @@
 	
 	if(!isset($usuario)){
 		header("location: https://megareader.azurewebsites.net/");
-		echo "No se cargaron los datos del usuario<br>";
 		die();
 	}else{
 		echo "Se cargaron los datos del usuario<br>";
