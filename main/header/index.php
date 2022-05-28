@@ -24,7 +24,7 @@ echo '
 				<div class="navbar-item has-dropdown is-hoverable">
 					<a class="navbar-link is-size-5 has-text-info" href="#"> '.$_SESSION['name_user'].' </a>
 					<div class="navbar-dropdown is-boxed">
-						<a class="navbar-item is-size-5 icon-text" href="https://megareader.azurewebsites.net/main/libros">
+						<a class="navbar-item is-size-5 icon-text" href="http://megareader.azurewebsites.net/main/libros/">
 							<span class="icon has-text-success"><i class="fas fa-book"></i></span> 
 							<span class="has-text-black">Libros</span>
 						</a>
