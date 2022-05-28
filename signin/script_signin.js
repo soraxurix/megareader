@@ -4,6 +4,7 @@ const icono_button = document.getElementById("icono-button");
 const notificacion = document.getElementById("notificacion");
 
 button_signin.addEventListener("click", async function (e) {
+	// Agregamos loader
 	icono_button.innerHTML = '<div class="loader is-loading"></div>';
 
 	const formData = new FormData(form);
@@ -18,7 +19,11 @@ button_signin.addEventListener("click", async function (e) {
 		icono_button.innerHTML = '<i class="fas fa-pen"></i>';
 		return;
 	}
-	console.log('todo bien');
+	
+	const res = await fetch("crear_cliente.php", {
+		method: 'POST',
+		body: formData
+	});
 
 	// Agregando icono normal
 	icono_button.innerHTML = '<i class="fas fa-pen"></i>';
