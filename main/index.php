@@ -49,9 +49,9 @@
 	</style>	
 </head>
 <body>
-	
+	<?php include 'header/index.php';?>
 
-	<div class="nav_container">
+	<!-- <div class="nav_container">
 		<nav class="navbar">
 		  <div class="navbar-brand">
 		    <a class="navbar-item" href="#">
@@ -98,7 +98,7 @@
 		    </div>
 		  </div>
 		</nav>
-	</div>	
+	</div> -->	
 
 	<script>
 		document.addEventListener('DOMContentLoaded', () => {
@@ -127,7 +127,7 @@
 
 	<!-- Main contnet -->
 	<div class="container main-content">
-		<h1> <?php include 'header/index.php';?></h1>
+		<h1>Hola!</h1>
 	</div>
 </body>
 </html>
