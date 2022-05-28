@@ -112,7 +112,7 @@
 			</div>
 			<div class='card-content'>
 				<br>
-				<button class="button is-fullwidth is-success is-outlined">Comprar ahora</button>
+				<button class="button is-fullwidth is-success is-outlined" onclick="enviar_pagar(1)">Comprar ahora</button>
 			</div>
 		 	 
 		</div>
@@ -126,7 +126,7 @@
 			</div>
 			<div class='card-content'>
 				<br>
-				<button class="button is-fullwidth is-success is-outlined">Comprar ahora</button>
+				<button class="button is-fullwidth is-success is-outlined" onclick="enviar_pagar(2)">Comprar ahora</button>
 			</div>
 		  
 		</div>
@@ -140,7 +140,7 @@
 			</div>
 			<div class='card-content'>
 				<br>
-				<button class="button is-fullwidth is-success is-outlined">Comprar ahora</button>
+				<button class="button is-fullwidth is-success is-outlined" onclick="enviar_pagar(3)">Comprar ahora</button>
 			</div>
 		  
 		</div>
@@ -154,7 +154,7 @@
 			</div>
 			<div class='card-content'>
 				<br>
-				<button class="button is-fullwidth is-success is-outlined">Comprar ahora</button>
+				<button class="button is-fullwidth is-success is-outlined" onclick="enviar_pagar(4)">Comprar ahora</button>
 			</div>
 		  
 		</div>
@@ -168,7 +168,7 @@
 			</div>
 			<div class='card-content'>
 				<br>
-				<button class="button is-fullwidth is-success is-outlined">Comprar ahora</button>
+				<button class="button is-fullwidth is-success is-outlined" onclick="enviar_pagar(5)">Comprar ahora</button>
 			</div>
 		  
 		</div>
@@ -183,10 +183,12 @@
 			<div class='card-content'>
 				<br>
 				<!-- <button class="button ">Comprar ahora</button> -->
-				<button class="button is-fullwidth is-success is-outlined">Comprar ahora</button>
+				<button class="button is-fullwidth is-success is-outlined" onclick="enviar_pagar(6)">Comprar ahora</button>
 			</div>
 		  
 		</div>
 	</div>
+
+	<script src="script_libros.js"></script>
 </body>
 </html>

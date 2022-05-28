@@ -28,7 +28,7 @@ echo '
 							<span class="icon has-text-success"><i class="fas fa-book"></i></span> 
 							<span class="has-text-black">Libros</span>
 						</a>
-						<a class="navbar-item is-size-5 icon-text" href="#"> 
+						<a class="navbar-item is-size-5 icon-text" href="http://megareader.azurewebsites.net/main/perfil/"> 
 							<span class="icon has-text-primary"><i class="fas fa-user"></i></span>
 							<span class="has-text-black">Perfil</span>
 						</a>
