@@ -48,7 +48,7 @@
 		    		    	  
 		    <div class="navbar-end">
 				<div class="navbar-item has-dropdown is-hoverable">
-					<a class="navbar-link is-size-5 has-text-info" href="#"> <?php $_SESSION['name_user']?> </a>
+					<a class="navbar-link is-size-5 has-text-info" href="#"> <?php echo $_SESSION['name_user']?> </a>
 					<div class="navbar-dropdown is-boxed">
 						<a class="navbar-item is-size-5 icon-text">
 							<span class="icon has-text-success"><i class="fas fa-book"></i></span> 
