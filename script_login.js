@@ -6,8 +6,9 @@ const notificacion = document.getElementById("notificacion");
 button_login.addEventListener('click', async function (e) {
 	// Agregamos el icono de cargando
 	icono_button.innerHTML = '<div class="loader is-loading"></div>';
+	const res = await fetch('clases/conexion.php');
 
-	var form = document.getElementById("form_login");
+	/*var form = document.getElementById("form_login");
 	var dataForm = new FormData(form);
 	
 	const res = await fetch('inicar_sesion.php', {
@@ -44,7 +45,7 @@ button_login.addEventListener('click', async function (e) {
 			notificacion.classList.add('is-danger');
 			notificacion.classList.remove('is-hidden');
 			break;
-	}
+	}*/
 
 	// Agregando icono normal
 	icono_button.innerHTML = '<i class="fas fa-user"></i>';
