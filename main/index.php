@@ -127,7 +127,7 @@
 
 	<!-- Main contnet -->
 	<div class="container main-content">
-		<h1>Hola!</h1>
+		<h1> <?php include 'header/index.php';?></h1>
 	</div>
 </body>
 </html>
