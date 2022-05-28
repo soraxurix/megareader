@@ -27,10 +27,11 @@
 	</style>	
 </head>
 <body>
-	<?php include 'sesion/comprobar_sesion.php'; 
+	<?php 
+		include 'sesion/comprobar_sesion.php'; 
 		
-		echo "id: ".$_SESSION['id_user'];
-		echo "<br> nombre: ".$_SESSION['name_user'];
+		echo "id: ".$usuario;
+		echo "<br> nombre: ".$nombre;
 
 	?>
 
