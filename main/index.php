@@ -21,7 +21,7 @@
 
 		.main-content{
 			min-height: 600px; 
-			background-color: #E5E5E5;
+			background-color: #F1F0F0;
 			border-radius: 8px; 
 			margin-top: 30px;
 			padding: 30px;
@@ -45,7 +45,7 @@
 		echo "<h1>".$nombre."</h1>";
 
 		if(!isset($usuario)){
-			echo "No se cargaron los datos del usuario<br>";
+			header("location: https://megareader.azurewebsites.net/");
 		}else{
 			echo "Se cargaron los datos del usuario<br>";
 		}
