@@ -60,7 +60,7 @@
 		    	width: 45%;
 		  	}
 		}/**/
-		@media screen and (max-width: 542px) {
+		@media screen and (max-width: 755px) {
   			.box {
 		    	width: 100%;
 		    	margin: 0;
@@ -112,9 +112,9 @@
 			</div>
 			<div class='card-content'>
 				<br>
-				<button class="button is-fullwidth">Comprar ahora</button>
+				<button class="button is-fullwidth is-success is-outlined">Comprar ahora</button>
 			</div>
-		  
+		 	 
 		</div>
 		<div class="box" style>
 			<p class="has-text-centered title is-5">Dracula</p>	  
@@ -126,7 +126,7 @@
 			</div>
 			<div class='card-content'>
 				<br>
-				<button class="button is-fullwidth">Comprar ahora</button>
+				<button class="button is-fullwidth is-success is-outlined">Comprar ahora</button>
 			</div>
 		  
 		</div>
@@ -140,7 +140,7 @@
 			</div>
 			<div class='card-content'>
 				<br>
-				<button class="button is-fullwidth">Comprar ahora</button>
+				<button class="button is-fullwidth is-success is-outlined">Comprar ahora</button>
 			</div>
 		  
 		</div>
@@ -154,7 +154,36 @@
 			</div>
 			<div class='card-content'>
 				<br>
-				<button class="button is-fullwidth">Comprar ahora</button>
+				<button class="button is-fullwidth is-success is-outlined">Comprar ahora</button>
+			</div>
+		  
+		</div>
+		<div class="box" style>
+			<p class="has-text-centered title is-5">The Beginning After The End</p>	  
+
+			<div class="card-image has-text-centered ">
+			    <figure class="image is-64x64 is-inline-block">
+			        <img src="https://m.media-amazon.com/images/I/51G93y3KZrL.jpg"/>
+			    </figure>
+			</div>
+			<div class='card-content'>
+				<br>
+				<button class="button is-fullwidth is-success is-outlined">Comprar ahora</button>
+			</div>
+		  
+		</div>
+		<div class="box" style>
+			<p class="has-text-centered title is-5">Ready Player One</p>	  
+
+			<div class="card-image has-text-centered ">
+			    <figure class="image is-64x64 is-inline-block">
+			        <img src="https://images-na.ssl-images-amazon.com/images/I/71R4I+eogrL.jpg"/>
+			    </figure>
+			</div>
+			<div class='card-content'>
+				<br>
+				<!-- <button class="button ">Comprar ahora</button> -->
+				<button class="button is-fullwidth is-success is-outlined">Comprar ahora</button>
 			</div>
 		  
 		</div>
