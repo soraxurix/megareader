@@ -28,15 +28,14 @@
 </head>
 <body>
 	<?php include 'sesion/comprobar_sesion.php'; ?>
-	
+
 	<div class="nav_container">
 		<nav class="navbar">
 		  <div class="navbar-brand">
 		    <a class="navbar-item" href="#">
-		      <!-- <img src="https://raw.githubusercontent.com/soraxurix/megareader_cloud/main/logo%20horizontal.png"> -->
+		      
 			  <img src="https://raw.githubusercontent.com/soraxurix/megareader_cloud/main/public/logo%20horizontal.png" width="112" height="28">
-		      <!-- <img src="https://raw.githubusercontent.com/soraxurix/GDLREADER/main/GDLREADER/app/src/main/res/drawable/logo.png">
-		      <span class="is-size-4">Megareader</span> -->
+		      
 		    </a>
 		    <div class="navbar-burger" data-target="navBar">
 		      <span></span>
