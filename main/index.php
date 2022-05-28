@@ -2,14 +2,15 @@
 	session_start();
 	$usuario = $_SESSION['id_user'];
 	$nombre = $_SESSION['name_user'];
-	echo "<h1>Nombre: ".$nombre."</h1>";
-
+	
 	if(!isset($usuario)){
 		header("location: https://megareader.azurewebsites.net/");
 		echo "No se cargaron los datos del usuario<br>";
+		die();
 	}else{
 		echo "Se cargaron los datos del usuario<br>";
 	}
+	echo "<h1>Nombre: ".$nombre."</h1>";
 ?>
 
 <!DOCTYPE html>
