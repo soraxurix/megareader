@@ -38,12 +38,32 @@
 			border: solid 5px #48A6F4;
 			box-shadow: 2px 2px 17px -4px rgba(0,0,0,0.58);
 		}
+
+		.box{
+			display: inline-block;
+			width: 30%;
+			margin: 0 10px;
+			height: 250px;
+			max-height: 250px;
+		}
 		@media screen and (max-width: 1026px) {
   			.nav_container {
 		    	padding: 10px 0;
 		  	}
 		  	.main-content{
 		  		width: 95%;
+		  	}
+		}
+
+		@media screen and (max-width: 1026px) {
+  			.box {
+		    	width: 45%;
+		  	}
+		}/**/
+		@media screen and (max-width: 542px) {
+  			.box {
+		    	width: 100%;
+		    	margin: 0;
 		  	}
 		}
 
@@ -81,6 +101,63 @@
 	<!-- Main contnet -->
 	<div class="container main-content">
 		<p class="is-size-4 has-text-centered">Obten los mejores libros.</p>
+		<hr>
+		<div class="box" style>
+			<p class="has-text-centered title is-5">Don quijote</p>	  
+
+			<div class="card-image has-text-centered ">
+			    <figure class="image is-64x64 is-inline-block">
+			        <img src="https://imagenes.elpais.com/resizer/dcylXF7I3Oej-dyg6rTSbI3G0Ps=/414x0/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/7BN7MROFVTFLCFQ2FXZPUC3Y3E.jpg"/>
+			    </figure>
+			</div>
+			<div class='card-content'>
+				<br>
+				<button class="button is-fullwidth">Comprar ahora</button>
+			</div>
+		  
+		</div>
+		<div class="box" style>
+			<p class="has-text-centered title is-5">Dracula</p>	  
+
+			<div class="card-image has-text-centered ">
+			    <figure class="image is-64x64 is-inline-block">
+			        <img src="https://tumbaabierta.com/wp-content/uploads/2012/03/tumbaabierta_portada_dracula_ilustrado-mondadori.jpg"/>
+			    </figure>
+			</div>
+			<div class='card-content'>
+				<br>
+				<button class="button is-fullwidth">Comprar ahora</button>
+			</div>
+		  
+		</div>
+		<div class="box" style>
+			<p class="has-text-centered title is-5">La teoría del todo</p>	  
+
+			<div class="card-image has-text-centered ">
+			    <figure class="image is-64x64 is-inline-block">
+			        <img src="https://images-na.ssl-images-amazon.com/images/I/916d6cobjqL.jpg"/>
+			    </figure>
+			</div>
+			<div class='card-content'>
+				<br>
+				<button class="button is-fullwidth">Comprar ahora</button>
+			</div>
+		  
+		</div>
+		<div class="box" style>
+			<p class="has-text-centered title is-5">El gato negro</p>	  
+
+			<div class="card-image has-text-centered ">
+			    <figure class="image is-64x64 is-inline-block">
+			        <img src="https://m.media-amazon.com/images/I/41W3WKLzqeL.jpg"/>
+			    </figure>
+			</div>
+			<div class='card-content'>
+				<br>
+				<button class="button is-fullwidth">Comprar ahora</button>
+			</div>
+		  
+		</div>
 	</div>
 </body>
 </html>
