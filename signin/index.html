@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+	<link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/soraxurix/GDLREADER/main/GDLREADER/app/src/main/res/drawable/logo.png">	
+	
+	<!-- BULMA FRAMEWORK -->
+	<link rel="stylesheet" href="../librerias/bulma/css/bulma.min.css">
+	<!-- FRAMEWORK ANIMACIONES -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />		
+	<!-- FONT AWESOME -->
+	<script src="https://kit.fontawesome.com/cb918a26fb.js" crossorigin="anonymous"></script>
+	
+
+	<link rel="stylesheet" href="../style.css">
+	
+</head>
+<body>
+	
+	<!-- Cuadro del login -->
+	<div class="container form">
+		<img src="https://raw.githubusercontent.com/soraxurix/GDLREADER/main/GDLREADER/app/src/main/res/drawable/logo.png" class="avatar">
+		<!-- Titulo -->
+		<p class="title is-4 has-text-info-dark has-text-center has-text-centered">Únete a nosotros</p>
+		
+		<div class="notification is-danger has-text-centered is-hidden" id="notificacion"></div>
+
+		<form id='form_login'>
+			<!-- Input para el correo electronico -->
+			<div class="field">
+			  <p class="control has-icons-left">
+			    <input class="input is-rounded is-info has-text-info" type="text" placeholder="Nombre Completo" name="nombre">
+			    <span class="icon is-small is-left">
+			      <i class="fas fa-user-circle has-text-info"></i>
+			    </span>
+			  </p>
+			</div>
+			<!-- Input para el correo electronico -->
+			<div class="field">
+			  <p class="control has-icons-left">
+			    <input class="input is-rounded is-info has-text-info" type="email" placeholder="Correo electrónico" name="email">
+			    <span class="icon is-small is-left">
+			      <i class="fas fa-envelope has-text-info" ></i>
+			    </span>
+			  </p>
+			</div>
+			<!-- Input para el correo electronico -->
+			<div class="field">
+			  <p class="control has-icons-left">
+			    <input class="input is-rounded is-info has-text-info" type="password" placeholder="Contraseña" name="pass">
+			    <span class="icon is-small is-left">
+			      <i class="fas fa-lock  has-text-info"></i>
+			    </span>
+			  </p>
+			</div>
+			<div class="field">
+			  <p class="control has-icons-left">
+			    <input class="input is-rounded is-info has-text-info" type="password" placeholder="Confirmar Contraseña" name="passC">
+			    <span class="icon is-small is-left">
+			      <i class="fas fa-lock  has-text-info"></i>
+			    </span>
+			  </p>
+			</div>
+			<br>
+			<div style="width:100%; height:150px; overflow: auto; padding: 12px;" class="has-text-justified">
+			  Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, nulla! Labore amet aspernatur cupiditate eius, magni officia saepe inventore laboriosam, velit! Ipsam iure repellat, illo tenetur, eveniet facere. Eaque, commodi. Lorem ipsum dolor sit amet consectetur adipisicing, elit. At facere omnis repellendus quia dolorum aliquam neque ex accusantium itaque architecto, perspiciatis ipsam veritatis commodi! Quaerat at enim veniam a, perspiciatis.
+			</div>
+			<br>
+			<label class="checkbox">
+				<input type="checkbox"> Acepto el <span class="has-text-info">aviso de privacidad</span>
+			</label>
+		</form>
+
+		<hr >
+
+		<div class="buttons">
+			<button class="button is-success is-outlined is-rounded is-fullwidth" id="button-signin">
+				<span class="icon is-small" id="icono-button"><i class="fas fa-pen"></i></span> 
+				<span>Crear Cuenta</span>
+			</button>
+			
+		</div>
+	</div>
+	
+	<script src="script_login.js"></script>
+</body>
+</html>
