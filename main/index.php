@@ -1,4 +1,3 @@
-<!-- Comproabamos sesion -->
 <?php 
 	session_start();
 	$usuario = $_SESSION['id_user'];
@@ -7,6 +6,8 @@
 	if(!isset($usuario)){
 		header("location: https://megareader.azurewebsites.net/");
 		die();
+	}else{
+		echo "Se cargaron los datos del usuario<br>";
 	}
 ?>
 
@@ -37,7 +38,6 @@
 			margin-top: 30px;
 			padding: 30px;
 			border: solid 5px #48A6F4;
-			box-shadow: 2px 2px 17px -4px rgba(0,0,0,0.58);
 		}
 		@media screen and (max-width: 1026px) {
   			.nav_container {
@@ -52,7 +52,7 @@
 </head>
 <body>
 	
-	<!-- Agregamos la barra de navegacion -->
+
 	<div class="nav_container">
 		<nav class="navbar">
 		  <div class="navbar-brand">
