@@ -86,7 +86,7 @@
 		<p class="is-size-5">Correo electronico: <span class="has-text-info has-text-weight-bold"><?php echo $_SESSION['email_user']?></span></p>
 		<br>
 		<hr>
-		<div class="box " style="min-height: 200px">
+		<div class="box " style="min-height: 200px; overflow: auto;">
 			<p class="has-text-centered is-size-4">No tienes ningun libro registrado</p>
 
 			<table class="table is-fullwidth">
