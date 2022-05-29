@@ -37,7 +37,7 @@ echo '
 							<span class="icon has-text-warning"><i class="fas fa-question-circle"></i></span>
 							<span class="has-text-black">Sobre nosotros</span>
 						</a>
-						<a class="navbar-item is-size-5 icon-text" href="sesion/cerrar_sesion.php"> 
+						<a class="navbar-item is-size-5 icon-text" href="http://megareader.azurewebsites.net/main/sesion/cerrar_sesion.php"> 
 							<span class="icon has-text-danger"><i class="fas fa-sign-out-alt"></i></span>
 							<span class="has-text-black">Cerrar Sesion</span>
 						</a>
