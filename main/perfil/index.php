@@ -79,16 +79,15 @@
 
 
 	<!-- Main contnet -->
-	<div class="container main-content">
-		<p class="is-size-4 has-text-centered">Datos del usuario.</p>
+	<div class="container main-content" >
+		<p class="is-size-4 has-text-centered has-text-weight-bold has-text-primary">Datos del usuario.</p>
 		<hr>
 		<p class="is-size-5">Nombre: <span class="has-text-info has-text-weight-bold"><?php echo $nombre?></span></p>
+		<br>
 		<p class="is-size-5">Correo electronico: <span class="has-text-info has-text-weight-bold"><?php echo $_SESSION['email_user']?></span></p>
 		<br>
-		<hr>
-		<div class="box " style="min-height: 200px; overflow: auto;">
-			<p class="has-text-centered is-size-4">No tienes ningun libro registrado</p>
-
+		<hr>		
+		<div class="box is-hidden" id="container-libros_usuario" style="min-height: 200px; overflow: auto;">
 			<table class="table is-fullwidth">
 				<thead>
 				    <tr>
@@ -138,5 +137,7 @@
 			</table>
 		</div>
 	</div>
+
+	<script src="script_perfil.js"></script>
 </body>
 </html>
