@@ -116,7 +116,7 @@
 			</div>
 		 	 
 		</div>
-		<div class="box" style>
+		<div class="box">
 			<p class="has-text-centered title is-5">Dracula</p>	  
 
 			<div class="card-image has-text-centered ">
