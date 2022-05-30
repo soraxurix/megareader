@@ -1,4 +1,5 @@
 function enviar_pagar(idLibro) {
-	alert(idLibro);
+	
+	window.location.replace("pagar/?id="+idLibro);
 }
 
