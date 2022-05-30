@@ -103,6 +103,11 @@
 		});
 	</script>
 
+	<h1 id='name' class="is-hidden"><?php echo $_SESSION['name_user']?></h1>
+	<h1 id='email' class="is-hidden"><?php echo $_SESSION['email_user']?></h1>
+	<h1 id='amount' class="is-hidden"><?php echo $libro['precio']?></h1>
+	<h1 id='id_libro' class="is-hidden"><?php echo $libro['id_libro']?></h1>
+	<h1 id='id_usuario' class="is-hidden"><?php echo $_SESSION['id_user']?></h1>
 
 	<!-- Main contnet -->
 	<div class="container main-content">
