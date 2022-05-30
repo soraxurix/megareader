@@ -5,10 +5,17 @@
 	$usuario = $_SESSION['id_user'];
 	$nombre = $_SESSION['name_user'];
 	
-	if(!isset($usuario)){
+	if(!isset($usuario) || !isset($idLibro)){
 		header("location: https://megareader.azurewebsites.net/");
 		die();
 	}
+
+	include '../../../clases/conexion.php';
+	$consulta = "select * from libros where id_libro = $idLibro";
+	$result = mysqli_query($conexion, $consulta);
+
+	$libro = mysqli_fetch_assoc($result);
+	print_r($libro);
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +23,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Principal - MegarReader</title>
+	<title>Pagar Libro - MegarReader</title>
 	<link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/soraxurix/GDLREADER/main/GDLREADER/app/src/main/res/drawable/logo.png">	
 	
 	<!-- BULMA FRAMEWORK -->
@@ -97,7 +104,12 @@
 	<div class="container main-content">
 		<p class="is-size-4 has-text-centered">Pagar libro.</p>
 		<hr>
-		
+		<div class="card-image has-text-centered ">
+		    <figure class="image is-64x64 is-inline-block">
+		        <img src="../portadas/img1.jpg>"/>
+		    </figure>
+		</div>
+		<hr>
 		<form id="processCard" name="processCard" class="d-none">
 			<label>Tarjetas de debito: </label>
             <img src='https://test.progymcloud.com/main/suscripciones/cards2.png' width='90%'><br>
