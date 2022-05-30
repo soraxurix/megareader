@@ -69,6 +69,11 @@
 		}
 
 	</style>	
+
+	<!-- Librerias para OpenPay -->
+	<script type="text/javascript" src="https://resources.openpay.mx/lib/openpay-js/1.2.38/openpay.v1.min.js"></script>
+	<script type="text/javascript" src="https://openpay.s3.amazonaws.com/openpay.v1.min.js"></script>
+	<script type='text/javascript' src="https://openpay.s3.amazonaws.com/openpay-data.v1.min.js"></script>
 </head>
 <body>
 	<?php include '../../header/index.php';?>
@@ -155,7 +160,7 @@
 		</form>
 	<div>
 
-	<script src="script_libros.js"></script>
+	<script src="script_pagar.js"></script>
 </body>
 </html>
 
