@@ -71,7 +71,7 @@
 	</style>	
 
 	<!-- Librerias para OpenPay -->
-	<script type="text/javascript" src="https://resources.openpay.mx/lib/openpay-js/1.2.38/openpay.v1.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script type="text/javascript" src="https://openpay.s3.amazonaws.com/openpay.v1.min.js"></script>
 	<script type='text/javascript' src="https://openpay.s3.amazonaws.com/openpay-data.v1.min.js"></script>
 </head>
@@ -106,58 +106,59 @@
 
 	<!-- Main contnet -->
 	<div class="container main-content">
-		<p class="is-size-4 has-text-centered">Pagar libro.</p>
+		<p class="is-size-4 has-text-centered has-text-weight-bold">Pagar libro.</p>
 		<hr>
 		<div class="card-image has-text-centered ">
-			<p class="is-size-5">A pagar: </p>
+			<p class="is-size-5 has-text-danger has-text-weight-semibold">Pagar: </p>
 			<br>
 		    <figure class="image is-64x64 is-inline-block">
 		        <img src="https://megareader.azurewebsites.net/main/libros/portadas/<?php echo $libro['portada']?>"/>
 		    </figure>
 		    <div class='card-content'>
 				<br>
-				<p class="has-text-centered"><?php echo $libro['titulo']?></p>
-				<p class="has-text-centered has-text-weight-bold has-text-success is-size-4">$<?php echo $libro['precio']?></p>
+				<p class="has-text-centered has-text-link has-text-weight-semibold"><?php echo $libro['titulo']?></p>
+				<p class="has-text-centered has-text-weight-bold has-text-success is-size-4">$<?php echo $libro['precio']?>.00</p>
 			</div>
 		</div>
 		<hr>
-		<form id="processCard" name="processCard" class="d-none">
-			<label>Tarjetas de debito: </label>
+		<form action="#" method="POST" id="payment-form">
+            <label>Tarjeta de crédito o débito: </label>
             <img src='https://test.progymcloud.com/main/suscripciones/cards2.png' width='90%'><br>
             <br>
-
+			<input type="hidden" name="token_id" id="token_id">
             <div class="control has-icons-left">
-            	<input data-openpay-card="holder_name" class="input is-rounded is-primary has-text-centered" type="text" placeholder="Nombre del propietario"> 
+            	<input type="text" placeholder="Nombre del propietario" data-openpay-card="holder_name" class="input is-rounded is-primary has-text-centered has-text-primary">
 	            <span class="icon is-small is-left has-text-primary">
 			      <i class="fas fa-user"></i>
 			    </span> 
             </div>
             <br>
             <div class="control has-icons-left">
-            	<input data-openpay-card="card_number" type="numeric" class="input is-rounded is-link has-text-centered" placeholder="4000 1234 5678 9010 ">
+            	<input type="text" autocomplete="off" data-openpay-card="card_number" class="input is-rounded is-link has-text-centered has-text-link" placeholder="4000 1234 5678 9010 ">
 	            <span class="icon is-small is-left has-text-link">
 			      <i class="fas fa-credit-card"></i>
 			    </span> 
             </div>
+
             <br>
-			<input data-openpay-card="expiration_month" type="numeric" class="input is-rounded is-danger has-text-danger has-text-centered" placeholder="Mes" style="width: 120px; display: inline-block;">
+			
+			<input type="text" placeholder="Mes" data-openpay-card="expiration_month" class="input is-rounded is-danger has-text-danger has-text-centered" placeholder="Mes" style="width: 120px; display: inline-block;">
 	            
-                      
-            <input data-openpay-card="expiration_year" type="numeric" class="input is-rounded is-danger has-text-danger has-text-centered" placeholder="Año" style="width: 120px; display: inline-block;">
-	            
+            <input type="text" placeholder="Año" data-openpay-card="expiration_year" class="input is-rounded is-danger has-text-danger has-text-centered" placeholder="Año" style="width: 120px; display: inline-block;">    
             <br><br>
-            
-            <input data-openpay-card="expiration_year" type="numeric" class="input is-rounded is-info has-text-centered" placeholder="CVV" style="width: 120px; display: inline-block;">          
+
+            <input type="text" autocomplete="off" data-openpay-card="cvv2" class="input is-rounded is-info has-text-info has-text-centered" placeholder="CVV" style="width: 120px; display: inline-block;">
             <br><br>
 
             Transacción realizada vía: <br>
             <img src='https://solicitudesdepago.openpay.mx/wp-content/uploads/2022/03/openpay-color.png' width='22%'>            
-            <hr>
-            <button class="button is-success is-outlined is-rounded is-fullwidth" id="button-login">
-				<span class="icon is-small" id="icono-button"><i class="fas fa-money-check-alt"></i></span> 
-				<span>Realizar cargo</span>
-			</button>
-		</form>
+        </form>
+		<hr>
+        <div class="notification is-danger has-text-centered is-hidden" id="notificacion"></div>
+        <button class="button is-success is-outlined is-rounded is-fullwidth" id="pay-button">
+			<span class="icon is-small" id="icono-button"><i class="fas fa-money-check-alt"></i></span> 
+			<span>Realizar cargo</span>
+		</button>
 	<div>
 
 	<script src="script_pagar.js"></script>
