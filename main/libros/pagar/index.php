@@ -15,7 +15,6 @@
 	$result = mysqli_query($conexion, $consulta);
 
 	$libro = mysqli_fetch_assoc($result);
-	print_r($libro);
 ?>
 
 <!DOCTYPE html>
@@ -105,9 +104,16 @@
 		<p class="is-size-4 has-text-centered">Pagar libro.</p>
 		<hr>
 		<div class="card-image has-text-centered ">
+			<p class="is-size-5">A pagar: </p>
+			<br>
 		    <figure class="image is-64x64 is-inline-block">
-		        <img src="../portadas/img1.jpg>"/>
+		        <img src="https://megareader.azurewebsites.net/main/libros/portadas/<?php echo $libro['portada']?>"/>
 		    </figure>
+		    <div class='card-content'>
+				<br>
+				<p class="has-text-centered"><?php echo $libro['titulo']?></p>
+				<p class="has-text-centered has-text-weight-bold has-text-success is-size-4">$<?php echo $libro['precio']?></p>
+			</div>
 		</div>
 		<hr>
 		<form id="processCard" name="processCard" class="d-none">
