@@ -6,7 +6,7 @@ include '../../clases/encriptacion.php';
 $usuario = $_SESSION['id_user'];
 if (!isset($usuario)) die();
 
-$consulta = "SELECT l.titulo, l.fecha_publicacion, l.editorial, v.fecha_registro,  l.precio from usuarios u inner join ventas v on v.id_usuario = u.id_usuario inner join libros l on l.id_libro = v.id_libro where u.id_usuario = $usuario;";
+$consulta = "SELECT l.titulo, l.fecha_publicacion, l.editorial, v.fecha_registro,  l.precio from usuarios u inner join ventas v on v.id_usuario = u.id_usuario inner join libros l on l.id_libro = v.id_libro where u.id_usuario = $usuario order by v.fecha_registro desc;";
 $result = mysqli_query($conexion, $consulta);
 
 $libros = array();

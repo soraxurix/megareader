@@ -6,7 +6,7 @@ const notificacion = document.getElementById("notificacion");
 button_signin.addEventListener("click", async function (e) {
 	// Agregamos loader
 	icono_button.innerHTML = '<div class="loader is-loading"></div>';
-
+	button_signin.setAttribute("disabled", "true");
 	const formData = new FormData(form);
 
 	var mensaje = validarCampos(formData);
@@ -17,6 +17,7 @@ button_signin.addEventListener("click", async function (e) {
 		notificacion.classList.add('is-danger');
 		notificacion.classList.remove('is-hidden');
 		icono_button.innerHTML = '<i class="fas fa-pen"></i>';
+		button_signin.removeAttribute("disabled");
 		return;
 	}
 	
@@ -33,13 +34,18 @@ button_signin.addEventListener("click", async function (e) {
 		notificacion.classList.remove('is-danger');
 		notificacion.classList.remove('is-hidden');
 		window.location.replace("../main/");
+	} else if(data==201) {
+		notificacion.innerHTML = "El correo electronico ya existe.";
+		notificacion.classList.remove('is-success');
+		notificacion.classList.add('is-danger');
+		notificacion.classList.remove('is-hidden');
 	} else {
 		notificacion.innerHTML = "Hubo un error al realizar la consulta.";
 		notificacion.classList.remove('is-success');
 		notificacion.classList.add('is-danger');
 		notificacion.classList.remove('is-hidden');
 	}
-
+	button_signin.removeAttribute("disable");
 	// Agregando icono normal
 	icono_button.innerHTML = '<i class="fas fa-pen"></i>';
 });
