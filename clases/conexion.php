@@ -11,7 +11,7 @@ $db = "sql10496801";
 // $db = "sql10494751";
 
 $conexion = mysqli_connect($servidor,$usuario,$password,$db);
-// mysqli_set_charset($conexion, 'utf8');
+mysqli_set_charset($conexion, 'utf8');
 // if($conexion){
 // 	echo "Se conecto a la base de datos";
 // }
