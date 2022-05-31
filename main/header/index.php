@@ -33,7 +33,7 @@ echo '
 							<span class="has-text-black">Perfil</span>
 						</a>
 						<hr class="navbar-divider">
-						<a class="navbar-item is-size-5 icon-text" href="#"> 
+						<a class="navbar-item is-size-5 icon-text" href="http://megareader.azurewebsites.net/main/nosotros/"> 
 							<span class="icon has-text-warning"><i class="fas fa-question-circle"></i></span>
 							<span class="has-text-black">Sobre nosotros</span>
 						</a>
